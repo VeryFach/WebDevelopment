@@ -1,0 +1,470 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #696868;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fbfaf9;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../img/Moving-Boxes-Self-Storage-1-800x350.jpg'); /* Ganti dengan URL gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+/* Overlay Transparan */
+.hero-overlay {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kotak Transparan untuk Teks */
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.3); /* Putih dengan transparansi */
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Teks */
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Tombol CTA */
+.cta-button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6e200;
+}
+
+/*store-info*/
+.storage-info {
+    background-color: #f8f8f8; /* Warna latar belakang berbeda */
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.storage-info h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.storage-info p {
+    font-size: 1.1em;
+    font-size: small;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 45%;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.video-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials */
+/* Container untuk slider */
+.testimonials-container {
+    display: flex;
+    overflow-x: auto; /* Membuat slider bisa di-scroll */
+    scroll-snap-type: x mandatory; /* Scroll snap aktif */
+    gap: 20px; /* Jarak antar testimonial */
+    padding: 20px;
+    scrollbar-width: none; /* Hilangkan scrollbar di Firefox */
+}
+
+/* Sembunyikan scrollbar di Webkit (Chrome, Safari) */
+.testimonials-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tiap testimonial sebagai slide */
+.testimonial {
+    flex: 0 0 80%; /* Lebar setiap testimonial (bisa diubah) */
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: center; /* Supaya setiap box berhenti di tengah */
+}
+
+/* Responsif: Tampilkan lebih banyak testimonial pada layar besar */
+@media (min-width: 768px) {
+    .testimonial {
+        flex: 0 0 45%; /* 2 testimonial per row di tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonial {
+        flex: 0 0 30%; /* 3 testimonial per row di desktop */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+.footer-content {
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.bee-decoration {
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boxbee-logo {
+    width: 30%;
+}
+
+.checkOut-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.checkOut-item {
+    text-align: center;
+    width: 30%;
+}
+.checkOut-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.checkOut-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    /* background-color: #f4f4f4;
+    background-color: #333;
+    padding: 20px 0; */
+    text-align: center;
+}
+
+.footer-content {
+    background-color: white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.bee-decoration {
+    width: 80%;
+    max-width: fit-content;
+    max-width: fit-content;
+    top: 280px;
+    left: 1050px;
+    position: fixed;
+}
+
+.boxbee-logo {
+    width: 30%;
+    max-width: fit-content;
+}
+
+/* Container gambar */
+.footer-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    /* Jarak antar gambar */
+    margin-top: 20px;
+}
+
+/* Style untuk gambar dengan ukuran berbeda */
+.logo-small {
+    width: 120px;
+    /* Gambar kecil */
+    height: auto;
+}
+
+.logo-large {
+    width: 80px;
+    /* Gambar besar */
+    height: auto;
+}
+
+/* Efek hover untuk keduanya */
+.footer-images img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-images img:hover {
+    transform: scale(1.1);
+    /* Efek zoom saat hover */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+    }
+
+    .bee-decoration {
+        bottom: 10px;
+    }
+}
+
+/* Styling untuk main */
+.order-wrapper {
+    background: url('../img/order-now-bg.jpg') no-repeat center center/cover; /* Ganti dengan URL gambar yang sesuai */
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    min-height: 80vh; /* Menyesuaikan tinggi minimum agar tidak terlalu kecil */
+}
+
+.order-container {
+    background: rgba(0, 0, 0, 0.6); /* Latar belakang transparan untuk konten */
+    padding: 80px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 800px;
+    width: 90%;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.option {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 80px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.option img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.business-text {
+    margin-top: 80px;
+    font-size: 14px;
+}
+
+.business-text a {
+    color: yellow;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .option {
+        width: 80%;
+    }
+}
