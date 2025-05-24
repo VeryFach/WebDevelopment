@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 // Resource route untuk CRUD lengkap
 Route::resource('products', ProductController::class);
+
+Route::get('hospitals/csv/files', [HospitalController::class, 'listCsvFiles']);
